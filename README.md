@@ -1,2 +1,2 @@
-# CBIT-MUN 2"
+# CBIT-MUN 2023"
 CBITMUN 2023 Conference Website"
