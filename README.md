@@ -1,4 +1,5 @@
-# CBIT-MUN 2023
+# CBIT-MUN 2017
 
-CBITMUN 2023 Conference Website
+Code for the "CBITMUN 2017 Conference Website"
 
+cbitmun.github.io
