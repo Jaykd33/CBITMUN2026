@@ -1,3 +1,3 @@
-# CBIT-MUN 2023
+# CBITMUN
 
-CBITMUN 2023 Conference Website
+cbitmun.in[https://cbitmun.in]
