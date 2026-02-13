@@ -13,82 +13,100 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top ">
+	<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top" id="mainNavbar">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<i class="fa fa-bars fa-2x" aria-hidden="true" style="color: rgb(255, 255, 255);"></i>
+			<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
 		</button>
 
-		<a class="navbar-brand"><img class="nav-image" src="assets/Goldendove2026.png"></a>
+		<a class="navbar-brand" href="index.html" aria-label="CBITMUN 2026 Home">
+			<img class="nav-image" src="assets/Goldendove2026.png" alt="CBITMUN 2026 Logo">
+		</a>
 
 		<div id="navbarNavDropdown" class="navbar-collapse collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#about">About Us</a>
+				<li class="nav-item" data-page="home">
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
-				<!--<li class="nav-item">
-					<a class="nav-link" href="#committees">Committees</a>-->
+				<li class="nav-item" data-page="home">
+					<a class="nav-link" href="index.html#about">About Us</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#cc">Core Committee</a>
+				<li class="nav-item" data-page="team">
+					<a class="nav-link" href="index.html#cc">Team</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#sec">Secretariat</a>
+				<li class="nav-item" data-page="committees">
+					<a class="nav-link" href="committees.html">Committees</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#yra">Year Round Activity</a>
+				<li class="nav-item" data-page="recent-editions">
+					<a class="nav-link" href="yra/prev.html">Recent Editions</a>
 				</li>
+				<li class="nav-item" data-page="other-events">
+					<a class="nav-link" href="index.html#yra">Other Events</a>
 				</li>
-				<!--<li class="nav-item">
-					<a class="nav-link" href="#part">Our Partners</a>
-				</li>-->
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact Us</a>
+				<li class="nav-item" data-page="contact">
+					<a class="nav-link" href="index.html#contact">Contact Us</a>
 				</li>
-
 			</ul>
-			<ul class="navbar-nav">
-				<!--<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Resources
+			<ul class="navbar-nav navbar-social">
+				<li class="nav-item">
+					<a class="nav-link nav-social-link" href="https://www.instagram.com/cbitmunhyd/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1zVfaX2hYBN2vN8R0i-0r04MX7enUB4YPGnCExq7Er-M/edit#gid=1154910506">Allotments</a>
-						<a class="dropdown-item" href="#">Venue</a>
-						<a class="dropdown-item" href="#">Background Guides</a>
-						<a class="dropdown-item" href="#">Conference Handbook</a>
-						</div>
-					</li>-->
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.instagram.com/cbitmunhyd/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.facebook.com/cbitmunhyd"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-social-link" href="https://www.facebook.com/cbitmunhyd" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-social-link"
+					   href="https://www.linkedin.com/company/cbitmun/?viewAsMember=true"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   aria-label="LinkedIn">
+					  <i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				  </li>
+				  
+			</ul>
+		</div>
+	</nav>
 
-		<section>
-			<div class="hero-unit">
-				<div class="text-vertical-center">
-					<div class="container">
-						<h1 class="hero-unit-primary-text" align="left" style="margin-top: 70px;">CBITMUN 2026</h1>
-						<p align="left" class="hero-unit-secondary-text">10-12th April 2026</p>
-						<a
-							href="https://bit.ly/CBITMUN2026DelegateApplicationForm" 
-							target="_blank" 
-							class="hero-unit-btn apply-btn">
-							Apply Now!
-						</a>
-						<!-- <a align="left" class="hero-unit-btn" href="">Applications Closed!</a> -->
-					</div>
-				</div>
-				<span id="startchange"></span>
-			</div>
-		</section>
+	<section class="hero-unit">
+		<div class="hero-overlay"></div>
+	  
+		<!-- TOP ROW -->
+		<div class="hero-top-row">
+		  <div class="hero-date">10th–12th April</div>
+		  <div class="hero-edition">15th Edition</div>
+		</div>
+	  
+		<!-- CENTER CONTENT -->
+		<div class="hero-center">
+		  <h1 class="hero-title">
+			<br>
+			CBITMUN<br>
+			2026
+		  </h1>
+	  
+		  <a href="https://bit.ly/CBITMUN2026DelegateApplicationForm"
+			 class="hero-apply-btn">
+			Apply Now!
+		  </a>
+	  
+		  <p class="hero-theme">संकल्पेन नेतृत्वम्</p>
+		</div>
+	  
+		<div class="hero-scroll-indicator"
+			 onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+		</div>
+	  </section>
+	  
+	  
 		
 	<!-- <section id="committees" style="background: #F6F6F6; padding: 80px 0px;"> 
 		<h1 class="lead text-center h1-heads">Committees</h1>
@@ -127,178 +145,285 @@
 		</div>
 	</section> -->
 	
-	<section id="about" style="padding: 40px 0px;">
+	<section id="about" class="about-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<img class="img-fluid center-block" src="assets/Goldendove2026.png" width="200">
-				</div>
-				<div class="col-sm-8 center-res">
-					<h1 class="h1-heads">About</h1>
-					<p style="text-align: justify;">
-						CBITMUN club was started back in 2011 by a group of debate enthusiasts with the motto to set up, encourage and endorse Model United Nations conferences. It was Model United Nations Initiative for the first time of its level in the city of Hyderabad. As years passed, it has not only succeeded in conducting a world class conference but has been witnessing a sharp increase in the number of participants with every edition. The club always stood for the quality of debate and hospitality it delivers during the conference.
-CBIT MUN is one of the few Model United Nations conference in the country that holds a legacy of Fourteen successful editions. 
-					</p>
-				</div>
+	  
+		  <div class="about-card">
+			<div class="about-card-image">
+			  <img src="assets/CBIT Main block 1.1.jpg" alt="About CBIT">
 			</div>
+			<div class="about-card-content">
+			  <h2 class="about-card-title">About CBIT</h2>
+			  <p>For nearly five decades, Chaitanya Bharathi Institute of Technology (CBIT) has stood as a beacon of academic excellence and leadership in Hyderabad, Telangana. Established in 1979, CBIT has consistently upheld its reputation as one of South India’s premier engineering institutions, defined by academic rigor and a strong legacy of achievement.</p>
+
+				<p>Accredited by NAAC with an A++ Grade, CBIT operates with the highest standards of trust and quality. Its academic strength and faculty excellence are further reflected in its recognition as the 2nd Best Private Engineering College in Telangana by The Week research survey, affirming the institution’s commitment to holistic and future-focused education.</p>
+				
+				<p>Beyond rankings, CBIT offers a dynamic 50+ acre campus that nurtures ambition, ethics, and innovation. Dedicated to shaping industry-ready professionals, the institute proudly hosts CBITMUN, extending its legacy beyond engineering by inspiring students to become global thinkers, diplomats, and leaders who carry forward CBIT’s values of intellect and integrity.</p>
+			</div>
+		  </div>
+	  
+		  <div class="about-card reverse">
+			<div class="about-card-image">
+			  <img src="yra/CBITMUN25.jpg" alt="About CBITMUN">
+			</div>
+			<div class="about-card-content">
+			  <h2 class="about-card-title">About CBITMUN</h2>
+			  <p>CBITMUN, launched in 2011 by a visionary group of debate enthusiasts, pioneered the Model United Nations culture in Hyderabad at a time when MUNs were still emerging in the region. As the first conference of its scale, it set new benchmarks in diplomatic simulation, professionalism, and academic excellence.</p>
+			  <p>Rooted in the core principles of exceptional debate quality and a superior delegate experience, CBITMUN has grown into a nationally recognized and highly respected conference. Its consistency, intellectual rigor, and professional standards have made it an eagerly awaited conference year after year.</p>
+			  <p>With nearly 500 participants annually from schools, colleges, universities, and professional backgrounds across India—and international participation in previous editions—CBITMUN stands as a diverse and dynamic platform. By bringing together ambitious minds from varied backgrounds, it continues to nurture leadership, critical thinking, and global awareness among future leaders.</p>
+			</div>
+		  </div>
+	  
 		</div>
-	</section>
+	  </section>
+	  
 		
 	</section>
 
 	
 			
-	<section style="padding: 0px 0px 80px 0px;" id="cc"> 
-		<h1 class="lead text-center h1-heads">Core Committee</h1>
-		<hr class="h1-underline">
-		<div class="container text-center">
-			<div class="row" style="margin: 35px 0px;">
-				<div class="col-sm-6">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/CBITMUN ki Jay.png" width="250">
-					<h3 class="team-name">Jay Kumar Das</h3>
-					<h4 class="team-des">Secretary General</h4>
-				</div>
-				<div class="col-sm-6">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Deepak anna.png" width="250">
-					</a>
-					<h3 class="team-name">PVS Deepak</h3>
-					<h4 class="team-des">Deputy Secretary General</h4>
-				</div>
-			</div>
-			<div class="row" style="margin: 35px 0px;">
-
-				<div class="col-sm-6"> 
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Priyasha.png" width="250">
-					</a>
-					<h3 class="team-name">Padma Priyasha</h3>
-					<h4 class="team-des">Under-Secretary General</h4>
-				</div>
-				<div class="col-sm-6">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Sohan Hero.png" width="250">
-					</a>
-					<h3 class="team-name">Sohan Reddy</h3>
-					<h4 class="team-des">Under-Secretary General</h4>
-				</div>
-			</div>
-			<div class="row" style="margin: 35px 0px;">
-				<div class="col-sm-4">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Meghana.png" width="250">
-					</a>
-					<h3 class="team-name">Lakshmi Meghana</h3>
-					<h4 class="team-des">Charge D' Affaires</h4>
-				</div>
-				<div class="col-sm-4">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Sumeeth bhai.png" width="250">
-					</a>
-					<h3 class="team-name">Lanka Sumeeth</h3>
-					<h4 class="team-des">Charge D' Affaires</h4>
-				</div>
-				<div class="col-sm-4">
-						<img class="rounded-circle img-fluid center-block" src="assets/CC26/Sahiti.png" width="250">
-					</a>
-					<h3 class="team-name">Sahiti Edupuganti</h3>
-					<h4 class="team-des">Charge D' Affaires</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="sec" style="background: #F6F6F6; padding: 40px 110px;">
-		<h1 class="lead text-center h1-heads">Secretariat</h1>
+	<section id="cc">
+		<h1 class="lead text-center h1-heads" style="font-family: 'Times New Roman', Times, serif;">Core Committee</h1>
 		<hr class="h1-underline">
 		<div class="container">
-			<div class="row">
-				<div class="center-res">
-					<style>
-						table, th, td {
-						  padding: 20px;
-						}
-						table {
-						  border-spacing: 15px;
-						  
-						}
-						td{
-							font-size: 20px;
-						}
-						</style>
-					  
-					<table class="center-res">
-						<tr>
-						  <td>Ishaan Prasad</td>
-						  <td>Indurti Srijayathi</td>	
-						  <td>Megana Boddupally</td>
-						  <td>Mohammed Hamza Jaweed</td>				  
-						</tr>
-						<tr>
-
-						  <td>Palaparthi Vaidehi</td>
-						  <td>Preetham Makam</td>
-						  <td>Pranathi Vemuri</td>
-						  <td>Pritika Agarwal</td>
-						</tr>				
-									
-						  <tr>
-
-							<td>Shaik Mohammed Shoaib</td>						  
-							<td>Sudhamaukya Mulugu</td>
-							<td>Sukeerthi Medha Reddy</td>
-							<td>Suraj Veerubhotla</td>
-						</tr>						  
-						  
-						  <tr>
-
-							<td>TRK Sree Shanmukh</td>
-							<td>Ved Utkoor</td>					  
-						  </tr>
-					  </table>
+	  
+		  <!-- Row 1 : Top 4 Leaders -->
+		  <div class="row justify-content-center">
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/CBITMUN ki Jay.png" alt="Jay Kumar Das">
 				</div>
+				<h3 class="cc-name">Jay Kumar Das</h3>
+				<p class="cc-role">Secretary General</p>
+			  </div>
 			</div>
-		</div>
-
-	</section>
-	<section id="yra" style="padding: 60px 0px;"> 
-		<h1 class="lead text-center h1-heads">Year Round Activity</h1>
-		<hr class="h1-underline">
-		<div class="card-container">
-			<a href="yra/prev.html">
-				<div class="card-primary">
-					<div style="height: 170px;">
-						<img class="img-fluid" src="assets/preved.JPG">
-					</div>
-					<h4 class="text-center">CBITMUN over the years</h4>
+	  
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Deepak anna.png" alt="PVS Deepak">
 				</div>
-			</a>
-
-			<a href="yra/icc.html">
-				<div class="card-primary">
-					<div style="height: 170px;">
-						<img class="img-fluid" src="assets/icc.jpg">
-					</div>
-					<h4 class="text-center">Inter Collegiate Conference</h4>
-				</div>
-			</a>
-
-
-			<a href="yra/srd.html">
-				<div class="card-primary">
-					<div style="height: 170px;">
-						<img class="img-fluid" src="assets/srd.png">
-					</div>
-					<h4 class="text-center">Social Responsibility Department</h4>
-				</div>
-			</a>
-			
-			<a href="yra/other.html">
-				<div class="card-primary">
-					<div style="height: 170px;">
-						<img class="img-fluid" src="assets/other.jpg">
-					</div>
-					<h4 class="text-center">Other Events</h4>
-				</div>
-			</a>
+				<h3 class="cc-name">PVS Deepak</h3>
+				<p class="cc-role">Deputy-Secretary General</p>
+			  </div>
 			</div>
+	  
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Priyasha.png" alt="Padma Priyasha">
+				</div>
+				<h3 class="cc-name">Padma Priyasha</h3>
+				<p class="cc-role">Under-Secretary General</p>
+			  </div>
+			</div>
+	  
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Sohan Hero.png" alt="Sohan Reddy">
+				</div>
+				<h3 class="cc-name">Sohan Reddy</h3>
+				<p class="cc-role">Under-Secretary General</p>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Row 2 : Chargé d’Affaires -->
+		  <div class="row justify-content-center mt-4">
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Meghana.png">
+				</div>
+				<h3 class="cc-name">Lakshmi Meghana</h3>
+				<p class="cc-role">Chargé d’Affaires</p>
+			  </div>
+			</div>
+	  
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Sumeeth bhai.png">
+				</div>
+				<h3 class="cc-name">Lanka Sumeeth</h3>
+				<p class="cc-role">Chargé d’Affaires</p>
+			  </div>
+			</div>
+	  
+			<div class="col-md-3 col-sm-6">
+			  <div class="cc-card">
+				<div class="cc-image">
+				  <img src="assets/CC26/Sahiti.png">
+				</div>
+				<h3 class="cc-name">Sahiti Edupuganti</h3>
+				<p class="cc-role">Chargé d’Affaires</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+			  <div class="cc-letter-card">
+				<h2>Letter from the Core Committee</h2>
+				<p>For over fifteen years, CBITMUN has stood not merely as a conference, but as a living
+					testament to vision, resilience, and the enduring spirit of diplomacy. As we turn the
+					page to a new chapter, we do so with purpose in our hearts and the strength of legacy
+					at our back. CBITMUN 2026 proudly carries forward its guiding ethos: संकल्पेन नेतृत्वम्
+					(Sankalpena Netritvam) — leadership rooted in resolve. 
+				</p>
+				<p>
+					For CBITMUN 2026, we renew our commitment to deeper dialogue, transformative
+					debate, and an experience woven with warmth, dignity, and excellence. CBITMUN
+					stands ready once again to push boundaries, reimagine diplomacy, and create
+					moments that stay long after the conference ends. Mark your calendars for the 10th,
+					11th, and 12th of April, 2026, three days that aspire not for attendance, but for impact;
+					not for conversation, but for change; not for recognition, but for legacy.
+				</p>
+				<p>
+					With resolve in our hearts and purpose in our stride, we invite you to be part of a journey
+					that will echo far beyond its conference.
+				</p>
+				<br>
+				<p>Regards,</p>
+				<p>Core Committee,</p>
+				<p>CBITMUN 2026.</p>	
+				</p>
+			  </div>
+			</div>
+		  </div>
 		</div>
-	</section>
+		<br>
+		<section style="padding: 80px 0;" id="faculty">
+			<h1 class="lead text-center h1-heads" style="font-family: 'Times New Roman', Times, serif;">
+			  Faculty Coordinators
+			</h1>
+			<hr class="h1-underline">
+			<br>
+			<div class="container">
+			  <div class="row justify-content-center">
+		  
+				<!-- Faculty Coordinator 1 -->
+				<div class="col-md-6 mb-4">
+				  <div class="fc-card">
+					<img src="assets/Shaggy.jpg" alt="Shagufta Parween">
+		  
+					<div class="fc-text">
+					  <h3 class="fc-name">Shagufta Parween</h3>
+					  <br>
+					  <p class="fc-role">
+						Head, Department of English
+					  </p>
+					  <p>
+						It gives me immense pleasure to witness CBITMUN grow into a platform
+						of academic excellence and leadership. Having been a part of this club
+						and its events for more than seven years, it truly feels like a family.
+					  </p>
+					</div>
+				  </div>
+				</div>
+		  
+				<!-- Faculty Coordinator 2 -->
+				<div class="col-md-6 mb-4">
+				  <div class="fc-card">
+					<img src="assets/Rahul.png" alt="Rahul">
+		  
+					<div class="fc-text">
+					  <h3 class="fc-name">Rahul</h3>
+					  <br>
+					  <p class="fc-role">
+						Department of Mechanical Engg.
+					  </p>
+					  <p>
+						It gives me immense pleasure to witness CBITMUN grow into a platform
+						of academic excellence and leadership. Having been a part of this club
+						and its events for more than seven years, it truly feels like a family.
+					  </p>
+					</div>
+				  </div>
+				</div>
+		  
+			  </div>
+			</div>
+		</section>
+		  
+
+		<section id="sec" class="secretariat-section">
+			<h1 class="lead text-center h1-heads" style="font-family: 'Times New Roman', Times, serif;">
+				Secretariat
+			  </h1>
+			<hr class="h1-underline">
+			<div class="container">
+			  <div class="secretariat-grid">
+				<div class="secretariat-card">Ishaan Prasad</div>
+				<div class="secretariat-card">Indurti Srijayathi</div>
+				<div class="secretariat-card">Megana Boddupally</div>
+				<div class="secretariat-card">Mohammed Hamza Jaweed</div>
+				<div class="secretariat-card">Palaparthi Vaidehi</div>
+				<div class="secretariat-card">Preetham Makam</div>
+				<div class="secretariat-card">Pranathi Vemuri</div>
+				<div class="secretariat-card">Pritika Agarwal</div>
+		  
+				<div class="secretariat-card">Shaik Mohammed Shoaib</div>
+				<div class="secretariat-card">Sudhamaukya Mulugu</div>
+				<div class="secretariat-card">Sukeerthi Medha Reddy</div>
+				<div class="secretariat-card">Suraj Veerubhotla</div>
+		  
+				<div class="secretariat-card">TRK Sree Shanmukh</div>
+				<div class="secretariat-card">Ved Utkoor</div>
+		  
+			  </div>
+			</div>
+		</section>
+		<section id="yra" class="yra-section">
+			<h1 class="lead text-center h1-heads" style="font-family: 'Times New Roman', Times, serif;">
+				Year Round Activity
+			  </h1>
+			<hr class="h1-underline">
+		  
+			<div class="yra-grid">
+		  
+			  <!-- ICC CARD -->
+			  <a href="yra/icc.html" class="yra-card">
+				<div class="yra-slider">
+				  <img src="assets/icc.jpg" class="active">
+				  <img src="yra/ICC 2025.png">
+				  <img src="yra/Icc 2024.png">
+				  <img src="yra/icc23.jpg">
+				</div>
+				<div class="yra-content">
+				  <h4>Inter Collegiate Conference</h4>
+				</div>
+			  </a>
+		  
+			  <!-- SRD CARD -->
+			  <a href="yra/srd.html" class="yra-card">
+				<div class="yra-slider">
+				  <img src="assets/srd.png" class="active">
+				  <img src="assets/srd2025.1.jpg">
+				  <img src="assets/srd2025.2.jpg">
+				  <img src="assets/srd2025.3.jpg">
+				</div>
+				<div class="yra-content">
+				  <h4>Social Responsibility Department</h4>
+				</div>
+			  </a>
+		  
+			  <!-- OTHER EVENTS -->
+			  <a href="yra/other.html" class="yra-card">
+				<div class="yra-slider">
+				  <img src="assets/other.jpg" class="active">
+				  <img src="assets/YP'26.JPG">
+				  <img src="assets/YP2026.jpeg">
+				</div>
+				<div class="yra-content">
+				  <h4>Other Events</h4>
+				</div>
+			  </a>
+		  
+			</div>
+		  </section>
+		  
 	<!-- <section id="part" style="background: #F6F6F6; padding: 40px 110px;">
 	<h1 class="lead text-center h1-heads">Our Partners</h1>
 		<hr class="h1-underline">
@@ -408,37 +533,271 @@ CBIT MUN is one of the few Model United Nations conference in the country that h
 		</div>
 </body>
 </section> -->
-	<section id="contact"; padding: 40px 0px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<img class="img-fluid center-block" src="assets/Goldendove2026.png" width="200">
-				</div>
-				<div class="col-sm-8 center-res">
-					<h1 class="h1-heads">CONTACT US</h1>
-				<p style="text-align: left;">
-    			Reach us on Instagram: 
-    			<a href="https://www.instagram.com/cbitmunhyd" target="_blank" style="color: #007bff; text-decoration: none;">
-       			 @cbitmunhyd
-    			</a>
-				</p>
+<section id="contact" class="section-soft contact-section">
+	<div class="container">
+		<h1 class="lead text-center h1-heads" style="font-family: 'Times New Roman', Times, serif;">
+			Contact Us		  </h1>
+	  <hr class="h1-underline">
+  
+	  <div class="row contact-cards">
+  
+  
+		<!-- Core Contacts -->
+		<div class="col-md-4">
+		  <div class="contact-card">
+			<h3 class="contact-title">Core Committee</h3>
+  
+			<p>
+			  <strong>Padma Priyasha Gadde</strong><br>
+			  Under Secretary General<br>
+			  <a href="tel:+919908520947">+91 99085 20947</a>
+			</p>
+  
+			<p>
+			  <strong>Sohan Reddy Kotla</strong><br>
+			  Under Secretary General<br>
+			  <a href="tel:+919550527704">+91 95505 27704</a>
+			</p>
 
-					<br><b>Contact Details:</b><br>
-					<br>Padma Priyasha Gadde - 9908520947 <br> Under Secretary General<br><br>
-					 Sohan Reddy Kotla - 9550527704 <br> Under Secretary General<br>
-					</p>
-				</div>
-			</div>
+			<p>
+				<strong>Lakshmi Meghana Madiraju</strong><br>
+				Charge d’Affaires<br>
+				<a href="tel:+918328382563">+91 83283 82563</a>
+			  </p>
+		  </div>
 		</div>
-	</section>
+  
+		<!-- Logo / Identity -->
+		<div class="col-md-4">
+		  <div class="contact-card contact-brand">
+			<img src="assets/Goldendove2026.png" alt="CBITMUN Logo">
+			<p class="contact-tagline">
+			  Model United Nations Conference<br>
+			  CBIT Hyderabad
+			</p>
+		  </div>
+		</div>
+
+				<!-- Contact Info -->
+		<div class="col-md-4">
+		  <div class="contact-card">
+			<h3 class="contact-title">Get in Touch</h3>
+  
+			<p>
+			  <strong>Email:</strong><br>
+			  <a href="mailto:cc.cbitmun25@gmail.com">cc.cbitmun25@gmail.com</a>
+			</p>
+  
+			<p>
+			  <strong>Instagram:</strong><br>
+			  <a href="https://www.instagram.com/cbitmunhyd/" target="_blank">
+				@cbitmunhyd
+			  </a>
+			</p>
+  
+			<p>
+			  <strong>LinkedIn:</strong><br>
+			  <a href="https://www.linkedin.com/company/cbitmun/?viewAsMember=true" target="_blank">
+				CBITMUN Hyderabad
+			  </a>
+			</p>
+  
+			<p>
+			  <strong>Facebook:</strong><br>
+			  <a href="https://www.facebook.com/cbitmunhyd" target="_blank">
+				/cbitmunhyd
+			  </a>
+			</p>
+		  </div>
+		</div>
+  
+	  </div>
+  
+	</div>
+  </section>
+
 
 	<div class="container">
 		<hr>
-		<footer>
+		<footer><center>
 			<p>@2026 CBITMUN 2026. All rights reserved. </p>
-		</footer>
+		</center></footer>
 	</div>
 
+	<!-- Navbar Functionality -->
+	<script>
+		(function() {
+			'use strict';
+			
+			const navbar = document.getElementById('mainNavbar');
+			const navLinks = document.querySelectorAll('.nav-link[href]');
+			const startChange = document.getElementById('startchange');
+			
+			// ============================================
+			// Active Page Detection
+			// ============================================
+			function setActiveNavItem() {
+				const currentPath = window.location.pathname;
+				const currentHash = window.location.hash;
+				const currentPage = currentPath.split('/').pop() || 'index.html';
+				
+				// Remove all active classes
+				document.querySelectorAll('.nav-item').forEach(item => {
+					item.classList.remove('active');
+				});
+				
+				// Determine active page
+				let activePage = 'home';
+				
+				if (currentPage === 'index.html' || currentPage === '' || currentPage === '/') {
+					if (currentHash === '#cc' || currentHash === '#sec') {
+						activePage = 'team';
+					} else if (currentHash === '#yra') {
+						activePage = 'recent-editions';
+					} else if (currentHash === '#contact') {
+						activePage = 'contact';
+					} else {
+						activePage = 'home';
+					}
+				} else if (currentPage.includes('committee')) {
+					activePage = 'committees';
+				} else if (currentPage.includes('contact')) {
+					activePage = 'contact';
+				}
+				
+				// Set active class
+				const activeNavItem = document.querySelector(`.nav-item[data-page="${activePage}"]`);
+				if (activeNavItem) {
+					activeNavItem.classList.add('active');
+				}
+			}
+			
+			// ============================================
+			// Navbar Scroll Behavior
+			// ============================================
+			function handleNavbarScroll() {
+				if (!navbar) return;
+				
+				const scrollY = window.pageYOffset || window.scrollY;
+				const scrollThreshold = startChange ? startChange.offsetTop : 100;
+				
+				if (scrollY > scrollThreshold) {
+					navbar.classList.add('navbar-scrolled');
+				} else {
+					navbar.classList.remove('navbar-scrolled');
+				}
+			}
+			
+			// ============================================
+			// Smooth Scroll for Hash Links
+			// ============================================
+			function initSmoothScroll() {
+				navLinks.forEach(link => {
+					const href = link.getAttribute('href');
+					
+					// Only handle hash links on same page
+					if (href && href.startsWith('#')) {
+						link.addEventListener('click', function(e) {
+							const targetId = href.substring(1);
+							const targetElement = document.getElementById(targetId);
+							
+							if (targetElement) {
+								e.preventDefault();
+								
+								const offsetTop = targetElement.offsetTop - 70; // Account for navbar height
+								
+								window.scrollTo({
+									top: offsetTop,
+									behavior: 'smooth'
+								});
+								
+								// Update URL without jumping
+								history.pushState(null, null, href);
+								
+								// Update active state after scroll
+								setTimeout(setActiveNavItem, 100);
+							}
+						});
+					}
+				});
+			}
+			
+			// ============================================
+			// Initialize on DOM Ready
+			// ============================================
+			document.addEventListener('DOMContentLoaded', function() {
+				setActiveNavItem();
+				initSmoothScroll();
+				handleNavbarScroll();
+				
+				// Update active state on hash change
+				window.addEventListener('hashchange', setActiveNavItem);
+			});
+			document.addEventListener("DOMContentLoaded", () => {
+				const hero = document.querySelector(".hero-unit");
+				if (hero) {
+					hero.classList.add("hero-animate");
+				}
+			});
+			
+			// ============================================
+			// Scroll Event Listener
+			// ============================================
+			let ticking = false;
+			window.addEventListener('scroll', function() {
+				if (!ticking) {
+					window.requestAnimationFrame(function() {
+						handleNavbarScroll();
+						ticking = false;
+					});
+					ticking = true;
+				}
+			});
+		})();
+	</script>
+
+	<!-- Hero Section Enhancements -->
+	<script>
+		// Subtle parallax effect for hero background
+		window.addEventListener('scroll', function() {
+			const hero = document.querySelector('.hero-unit');
+			const scrolled = window.pageYOffset;
+			const rate = scrolled * 0.5;
+			
+			if (hero && scrolled < hero.offsetHeight) {
+				hero.style.transform = 'translateY(' + rate + 'px)';
+			}
+		});
+
+		// Fade out scroll indicator on scroll
+		window.addEventListener('scroll', function() {
+			const indicator = document.querySelector('.hero-scroll-indicator');
+			if (indicator) {
+				const scrolled = window.pageYOffset;
+				const opacity = Math.max(0, 1 - (scrolled / 300));
+				indicator.style.opacity = opacity;
+			}
+		});
+
+		// Smooth reveal animation on load
+		document.addEventListener('DOMContentLoaded', function() {
+			const heroContent = document.querySelector('.hero-content');
+			if (heroContent) {
+				heroContent.style.opacity = '0';
+				setTimeout(function() {
+					heroContent.style.transition = 'opacity 1s ease-out';
+					heroContent.style.opacity = '1';
+				}, 100);
+			}
+		});
+
+		// Add hover sound feedback (optional - can be removed if not needed)
+		document.querySelectorAll('.hero-unit-primary-text, .hero-unit-tagline, .hero-divider, .hero-unit-secondary-text').forEach(function(element) {
+			element.addEventListener('mouseenter', function() {
+				this.style.transition = 'all 0.3s ease';
+			});
+		});
+	</script>
 
 	<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
